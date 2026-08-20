@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Download project
+        uses: actions/checkout@v4
+
+      - name: Extract Android project
+        run: unzip -o JohnSocial_Fixed.zip
 
       - name: Set up Java
         uses: actions/setup-java@v4
