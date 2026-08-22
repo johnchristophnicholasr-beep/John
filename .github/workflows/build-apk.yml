@@ -1,4 +1,4 @@
-name: Build John Social APK
+name: Build Chess APK
 
 on:
   workflow_dispatch:
